@@ -3,11 +3,18 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-// 引入全部组件
-import Vue from 'vue';
-import Mint from 'mint-ui';
-Vue.use(Mint);
 
+import Vant from 'vant';
+import 'vant/lib/index.css';
+
+import BaiduMap from 'vue-baidu-map'
+
+Vue.use(BaiduMap, {
+  // ak 是在百度地图开发者平台申请的密钥 详见 http://lbsyun.baidu.com/apiconsole/key */
+  ak: ''
+})
+
+Vue.use(Vant);
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
